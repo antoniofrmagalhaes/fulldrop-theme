@@ -11639,7 +11639,9 @@ select::-ms-expand {
  * --------------------------------------------------------------------
  */
 
-.announcement-bar {
+ /* Desabilitado 20/12/2024 */
+
+/* .announcement-bar {
   position: relative;
   display: block;
   font-weight: var(--text-font-bolder-weight);
@@ -11743,7 +11745,7 @@ select::-ms-expand {
   .announcement-bar__newsletter-inner {
     margin: 50px 0;
   }
-}
+} */
 
 /**
  * --------------------------------------------------------------------
@@ -13832,4 +13834,73 @@ input.qtyplus, input.qtyminus {
 .btn-buy-custom:hover {
   background:url("https://cdn.shopify.com/s/files/1/0294/0374/2339/files/icon_btn_buy.svg?v=1617282791") no-repeat 1.2rem 1.1rem rgba(var(--primary-button-background-rgb), 0.8) !important;
   background-size:24px !important;
+}
+
+
+
+
+
+
+/* customização AM daqui para baixo */
+
+/**
+ * --------------------------------------------------------------------
+ * SCROLLING ANNOUNCEMENT BAR
+ * --------------------------------------------------------------------
+ */
+
+ .announcement-bar {
+  position: relative;
+  overflow: hidden;
+  height: 48px; 
+  white-space: nowrap;
+}
+
+.announcement-bar__wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.announcement-bar__content {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.announcement-bar__item {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 16px;
+  line-height: 48px;
+}
+
+/* Classes para controlar tamanho da fonte */
+.announcement-bar--small .announcement-bar__item {
+  font-size: 12px;
+}
+
+.announcement-bar--medium .announcement-bar__item {
+  font-size: 16px;
+}
+
+.announcement-bar--large .announcement-bar__item {
+  font-size: 20px;
+}
+
+/* Classes para controlar o peso da fonte */
+.announcement-bar--normal .announcement-bar__item {
+  font-weight: normal;
+}
+
+.announcement-bar--bold .announcement-bar__item {
+  font-weight: bold;
+}
+
+/* Animação */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

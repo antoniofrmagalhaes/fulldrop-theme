@@ -4,18 +4,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (!wrapper || !content) return;
 
-  // Medir a largura do container visível
-  var wrapperWidth = wrapper.offsetWidth;
+  // Ler a duração da rolagem do atributo data-scroll-duration
+  var scrollDuration = parseFloat(wrapper.getAttribute("data-scroll-duration"));
+  if (isNaN(scrollDuration) || scrollDuration <= 0) {
+    scrollDuration = 45; // Valor de fallback caso a config não seja definida ou inválida
+  }
 
-  // Medir a largura do conteúdo
+  var wrapperWidth = wrapper.offsetWidth;
   var contentWidth = content.scrollWidth;
 
-  // Duplicar o conteúdo até que ele seja pelo menos o dobro da largura do container
+  // Duplicar o conteúdo para permitir rolagem contínua
   while (contentWidth < wrapperWidth * 2) {
     content.innerHTML += content.innerHTML;
     contentWidth = content.scrollWidth;
   }
 
-  // Aplicar animação para rolagem contínua
-  content.style.animation = "scroll 45s linear infinite";
+  // Aplicar animação com a duração configurável
+  content.style.animation = "scroll " + scrollDuration + "s linear infinite";
 });

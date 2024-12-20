@@ -120,50 +120,85 @@
       ]
     },
     {
-        "name": "Barra de Anuncio Rotativa",
-        "settings": [
-          {
-            "type": "color",
-            "id": "announcement_bar_background",
-            "label": "Cor de fundo"
-          },
-          {
-            "type": "color",
-            "id": "announcement_bar_color",
-            "label": "Cor da fonte"
-          },
-          {
-            "type": "text",
-            "id": "announcement_bar_text_1",
-            "label": "Texto 1"
-          },
-          {
-            "type": "text",
-            "id": "announcement_bar_text_2",
-            "label": "Texto 2 (opcional)"
-          },
-          {
-            "type": "text",
-            "id": "announcement_bar_text_3",
-            "label": "Texto 3 (opcional)"
-          },
-          {
-            "type": "text",
-            "id": "announcement_bar_text_4",
-            "label": "Texto 4 (opcional)"
-          },
-          {
-            "type": "text",
-            "id": "announcement_bar_text_5",
-            "label": "Texto 5 (opcional)"
-          },
-          {
-            "type": "text",
-            "id": "announcement_bar_text_6",
-            "label": "Texto 6 (opcional)"
-          }
-        ]
-      },
+      "name": "Announcement Bar",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_announcement",
+          "label": "Show Announcement Bar",
+          "default": true
+        },
+        {
+          "type": "number",
+          "id": "announcement_scroll_duration",
+          "label": "Duração do scrolling (segundos)",
+          "default": 45
+        },
+        {
+          "type": "select",
+          "id": "announcement_font_size",
+          "label": "Tamanho da Fonte",
+          "default": "medio",
+          "options": [
+            { "value": "pequeno", "label": "Pequeno" },
+            { "value": "medio", "label": "Médio" },
+            { "value": "grande", "label": "Grande" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "announcement_font_weight",
+          "label": "Espessura da Fonte",
+          "default": "normal",
+          "options": [
+            { "value": "normal", "label": "Normal" },
+            { "value": "bold", "label": "Bold" }
+          ]
+        },
+        {
+          "type": "color",
+          "id": "announcement_bar_background",
+          "label": "Background color",
+          "default": "#f8f8f8"
+        },
+        {
+          "type": "color",
+          "id": "announcement_bar_color",
+          "label": "Font color",
+          "default": "#000000"
+        },
+        {
+          "type": "text",
+          "id": "announcement_bar_text_1",
+          "label": "Text 1"
+        },
+        {
+          "type": "text",
+          "id": "announcement_bar_text_2",
+          "label": "Text 2 (optional)"
+        },
+        {
+          "type": "text",
+          "id": "announcement_bar_text_3",
+          "label": "Text 3 (optional)"
+        },
+        {
+          "type": "text",
+          "id": "announcement_bar_text_4",
+          "label": "Text 4 (optional)"
+        },
+        {
+          "type": "text",
+          "id": "announcement_bar_text_5",
+          "label": "Text 5 (optional)"
+        },
+        {
+          "type": "text",
+          "id": "announcement_bar_text_6",
+          "label": "Text 6 (optional)"
+        }
+      ]
+    },
     {
       "name": "Cabeçalho",
       "settings": [

@@ -24,6 +24,11 @@
     "secondary_button_text_color": "#ffffff",
     "footer_background": "#000000",
     "footer_text_color": "#ffffff",
+    "announcement_bar_background": "#000000",
+    "announcement_bar_color": "#ffffff",
+    "announcement_bar_text_1": "FRETE GRATIS",
+    "announcement_bar_text_2": "10% OFF EM TODA A LOJA",
+    "announcement_bar_text_3": "AM BRASIL SHOP",
     "header_text_color": "#737b97",
     "header_light_text_color": "#000000",
     "header_accent_color": "#000000",
@@ -375,19 +380,7 @@
       },
       "announcement-bar": {
         "type": "announcement-bar",
-        "settings": {
-          "show_announcement": true,
-          "background1": "#f5d043",
-          "background2": "#006aff",
-          "text_color": "#ffffff",
-          "text": "<div class=\"announcement-bar__inner\">           \t<p class=\"announcement-bar__content announcement-bar__content--left\">                             <svg class=\"announcesvg\" viewbox=\"0 0 23 24\" role=\"presentation\">       <g stroke-width=\"2\" fill=\"none\" fill-rule=\"evenodd\">         <path d=\"M6.5 3.25l12 6\" stroke=\"#999999\"></path>         <path stroke=\"#999999\" d=\"M23 7l-10 5L1 6M13 12v11\"></path>         <path stroke=\"#999999\" stroke-linecap=\"square\" d=\"M23 7v10l-10 6-12-6V6l10-5z\"></path>       </g>     </svg>Frete Grátis para todo o Brasil </p>           \t<p class=\"announcement-bar__content announcement-bar__content--right mobhide\"><svg class=\"announcesvg\" viewbox=\"0 0 23 24\" role=\"presentation\">       <g transform=\"translate(1 1)\" stroke-width=\"2\" fill=\"none\" fill-rule=\"evenodd\">         <path stroke=\"#999999\" d=\"M8 4h8v7\"></path>         <path stroke=\"#999999\" stroke-linecap=\"square\" d=\"M11 7L8 4l3-3\"></path>         <circle stroke=\"#999999\" stroke-linecap=\"square\" cx=\"6\" cy=\"20\" r=\"2\"></circle>         <circle stroke=\"#999999\" stroke-linecap=\"square\" cx=\"18\" cy=\"20\" r=\"2\"></circle>         <path stroke=\"#999999\" stroke-linecap=\"square\" d=\"M21 5l-2 10H5L3 0H0\"></path>       </g>     </svg> Trocas e Devoluções em até 7 dias</p>           <p class=\"announcement-bar__content announcement-bar__content--right mobhide\"> <svg class=\"announcesvg\" viewbox=\"0 0 24 23\" role=\"presentation\">       <g stroke-width=\"2\" fill=\"none\" fill-rule=\"evenodd\">         <path d=\"M17 1c-2.1 0-3.9 1.1-5 2.7C10.9 2.1 9.1 1 7 1 3.7 1 1 3.7 1 7c0 6 11 15 11 15s11-9 11-15c0-3.3-2.7-6-6-6z\" stroke=\"#999999\" stroke-linecap=\"square\"></path>         <path d=\"M16 5c1.65 0 3 1.35 3 3\" stroke=\"#999999\" stroke-linecap=\"round\"></path>       </g>     </svg> Satisfação Garantida ou Dinheiro de Volta</p>       </div>",
-          "text_position": "center",
-          "link": "",
-          "show_newsletter": false,
-          "newsletter_button": "",
-          "newsletter_title": "Newsletter",
-          "newsletter_content": "<p>Se inscreva em nossa newsletter para receber as últimas promoções.</p>"
-        }
+        "settings": {}
       },
       "popups": {
         "type": "popups",
@@ -914,14 +907,7 @@
         },
         "announcement-bar": {
           "type": "announcement-bar",
-          "settings": {
-            "text_color": "#ffffff",
-            "text": "Announce something here",
-            "link": "",
-            "newsletter_button": "Subscribe & Save",
-            "newsletter_title": "Newsletter",
-            "newsletter_content": "<p>A short sentence describing what someone will receive by subscribing</p>"
-          }
+          "settings": {}
         },
         "1542984811767": {
           "type": "featured-collection",
@@ -1204,14 +1190,7 @@
         },
         "announcement-bar": {
           "type": "announcement-bar",
-          "settings": {
-            "text_color": "#ffffff",
-            "text": "Announce something here",
-            "link": "",
-            "newsletter_button": "Subscribe & Save",
-            "newsletter_title": "Newsletter",
-            "newsletter_content": "<p>A short sentence describing what someone will receive by subscribing</p>"
-          }
+          "settings": {}
         },
         "1542984811767": {
           "type": "featured-collection",
